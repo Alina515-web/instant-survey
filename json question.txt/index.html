@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамический опрос</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="survey-wrapper">
+        <h1 class="survey-title">Анкетирование пользователей</h1>
+
+        <form id="survey-form">
+            <div id="questions-container">
+                <p class="loading-text">Загрузка вопросов, пожалуйста, подождите...</p>
+            </div>
+
+            <button type="submit" id="download-btn" class="submit-btn hidden">
+                Скачать результаты (.txt)
+            </button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

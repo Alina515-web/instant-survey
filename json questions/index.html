@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-опросник</title>
+    <!-- Подключаем внешние стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="survey-container">
+        <!-- Сюда подставится заголовок из JSON -->
+        <h1 id="survey-title">Загрузка опроса...</h1>
+
+        <!-- Форма, внутри которой будут генерироваться вопросы -->
+        <form id="survey-form">
+            <div id="survey-questions">
+                <!-- Сюда JavaScript вставит блоки с вопросами -->
+            </div>
+
+            <!-- Кнопка отправки изначально скрыта, пока не загрузятся вопросы -->
+            <button type="submit" id="submit-btn" class="hidden">Отправить ответы</button>
+        </form>
+
+        <!-- Блок для вывода результатов после отправки формы -->
+        <div id="result" class="hidden">
+            <h2>Опрос успешно завершен!</h2>
+            <p>Вот данные, которые мы собрали:</p>
+            <pre id="result-data"></pre>
+        </div>
+    </div>
+
+    <!-- Подключаем скрипт в самом конце body, чтобы HTML успел загрузиться -->
+    <script src="script.js"></script>
+</body>
+</html>
